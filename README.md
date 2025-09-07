@@ -1,0 +1,13 @@
+<svg
+  viewBox="0 0 600 140"
+  xmlns="http://www.w3.org/2000/svg">
+  <text
+    x="50%"
+    y="30%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-size="72"
+    font-weight="700"
+    font-family="Inter, Poppins, ui-sans-serif, system-ui"
+    fill="currentColor">PixelSavvy.ai</text>
+</svg>
