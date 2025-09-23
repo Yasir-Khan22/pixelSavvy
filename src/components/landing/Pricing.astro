@@ -110,26 +110,26 @@ const pricingTiers = [
 
       {
         pricingTiers.map((tier) => (
-          <section class="hover:text-white hover:bg-[#0121ef] transition-colors duration-700 ease-in-out flex flex-col justify-between rounded-3xl h-full text-base-900 p-8">
-            <div class="text-white">
+          <section class="bg-white hover:bg-[#0121ef] hover:text-white flex flex-col justify-between rounded-3xl h-full  p-8">
+            <div class="">
               <div class="flex flex-col gap-2">
-                <h3 class="text-lg text-base-900 ">{tier.title}</h3>
-                <p class="text-xl font-medium text-base-900 mt-2">
+                <h3 class="text-lg">{tier.title}</h3>
+                <p class="text-xl font-medium mt-2">
                   {tier.price}
                   {tier.note && (
-                    <span class="text-sm text-base-500">{tier.note}</span>
+                    <span class="text-sm">{tier.note}</span>
                   )}
-                  <span class="text-base-900 block text-xs">
+                  <span class="block text-xs">
                     {tier.subnote}
                   </span>
                 </p>
               </div>
-              <p class="text-xs text-base-600 mt-4">{tier.description}</p>
+              <p class="text-xs mt-4">{tier.description}</p>
 
               <div class="mt-6">
-                <p class="text-xs uppercase text-base-900">{tier.highlight}</p>
+                <p class="text-xs uppercase">{tier.highlight}</p>
                 <ul
-                  class="flex flex-col mt-2 text-sm text-base-600 gap-y-1 list-disc pl-4"
+                  class="flex flex-col mt-2 text-sm gap-y-1 list-disc pl-4"
                   role="list"
                 >
                   {tier.features.map((feature) => (
