@@ -8,19 +8,19 @@ import NotionLogo from "@/components/assets/NotionLogo.astro";
 
 const pricingTiers = [
   {
-    title: "Design + Dev",
-    price: "$3900",
-    note: "/monthly",
+   title: "One off",
+    price: "$399",
+    note: "",
     subnote: "USD + Local tax",
     description:
-      "Business & enterprises needing a full-featured website with custom backend solutions.",
-    highlight: "Same as in Design plus:",
-    features: [
-      " Design 20 pages (Figma)",
-      " Frontend + Backend Development (NODE/EXPRESS OR LARAVEL/DJANGO)",
-      "CMS/CRUD setup, forms, auth, admin panel",
-      " Staging + Development",
-      " Up to 4 revisions."
+      " Startups & small business needing a quick, professional online presence.",
+    highlight: "What you get:",
+     features: [
+      "Design 3 pages (Home + 2 inner) in Figma",
+      "Responsive (Desktop + Mobile)",
+      "Asset export for Dev team",
+      "Support & maintenance for 7 Days",
+      "Up to 2 revisions"
     ],
   },
   {
@@ -40,19 +40,19 @@ const pricingTiers = [
     ],
   },
   {
-    title: "One off",
-    price: "$399",
-    note: "",
+     title: "Design + Dev",
+    price: "$3900",
+    note: "/monthly",
     subnote: "USD + Local tax",
     description:
-      " Startups & small business needing a quick, professional online presence.",
-    highlight: "What you get:",
-     features: [
-      "Design 3 pages (Home + 2 inner) in Figma",
-      "Responsive (Desktop + Mobile)",
-      "Asset export for Dev team",
-      "Support & maintenance for 7 Days",
-      "Up to 2 revisions"
+      "Business & enterprises needing a full-featured website with custom backend solutions.",
+    highlight: "Same as in Design plus:",
+    features: [
+      " Design 20 pages (Figma)",
+      " Frontend + Backend Development (NODE/EXPRESS OR LARAVEL/DJANGO)",
+      "CMS/CRUD setup, forms, auth, admin panel",
+      " Staging + Development",
+      " Up to 4 revisions."
     ],
 
   },
@@ -65,7 +65,7 @@ const pricingTiers = [
       class="grid grid-cols-1 gap-px md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
       <section
-        class="col-span-full lg:col-span-1 bg-white flex flex-col justify-between rounded-3xl h-full text-base-900 p-8"
+        class="col-span-full  lg:col-span-1 bg-white flex flex-col justify-between rounded-3xl h-full text-base-900 p-8"
       >
         <div>
           <div class="flex gap-2">
@@ -110,7 +110,7 @@ const pricingTiers = [
 
       {
         pricingTiers.map((tier) => (
-          <section class="bg-white flex flex-col justify-between rounded-3xl h-full text-base-900 p-8">
+          <section class="hover:bg-[linear-gradient(140deg,rgba(1,33,239,1)_0%,rgba(0,0,0,1)_100%)] transition-colors duration-900 ease-in-out flex flex-col justify-between rounded-3xl h-full text-base-900 p-8">
             <div>
               <div class="flex flex-col gap-2">
                 <h3 class="text-lg text-base-900">{tier.title}</h3>
@@ -210,7 +210,7 @@ const pricingTiers = [
           </p>
 
           <a
-            href="faizanaltafbaig@gmail.com"
+            href="mailto:faizanaltafbaig@gmail.com"
             class="text-sm text-base-900 hover:text-blue-500 mt-4 font-medium"
           >
             Book a call
