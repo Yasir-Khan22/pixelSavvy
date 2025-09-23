@@ -110,10 +110,10 @@ const pricingTiers = [
 
       {
         pricingTiers.map((tier) => (
-          <section class="hover:bg-[linear-gradient(140deg,rgba(1,33,239,1)_0%,rgba(0,0,0,1)_100%)] transition-colors duration-900 ease-in-out flex flex-col justify-between rounded-3xl h-full text-base-900 p-8">
-            <div>
+          <section class="hover:text-white hover:bg-[#0121ef] transition-colors duration-700 ease-in-out flex flex-col justify-between rounded-3xl h-full text-base-900 p-8">
+            <div class="text-white">
               <div class="flex flex-col gap-2">
-                <h3 class="text-lg text-base-900">{tier.title}</h3>
+                <h3 class="text-lg text-base-900 ">{tier.title}</h3>
                 <p class="text-xl font-medium text-base-900 mt-2">
                   {tier.price}
                   {tier.note && (
