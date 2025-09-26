@@ -20,16 +20,16 @@ const footerLinks = [
 ];
 ---
 
-<footer class="overflow-hidden">
+<footer class="overflow-hidden bg-gradient-to-br  from-[#0121ef] to-black">
   <div class="px-8 pt-12 pb-24 max-w-xl mx-auto">
     <div class="grid grid-cols-2 lg:grid-cols-3">
       {
         footerLinks.map((section) => (
           <div>
-            <h3 class="text-base-900 text-sm">{section.title}</h3>
+            <h3 class="text-white text-sm">{section.title}</h3>
             <ul
               role="list"
-              class="mt-2 text-xs flex flex-col gap-1 text-base-600"
+              class="mt-2 text-xs flex flex-col gap-1 text-white"
             >
               {section.links.map((link) => (
                 <li>
@@ -44,7 +44,7 @@ const footerLinks = [
       }
     </div>
     <div class="mt-12">
-      <div class="text-sm text-base-900">
+      <div class="text-sm text-white">
         © 2025 Pixel Savvy. All rights reserved.
       </div>
       <p class="text-xs text-base-600 mt-1 text-balance">
